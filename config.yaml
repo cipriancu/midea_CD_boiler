@@ -1,0 +1,32 @@
+name: "Midea Boiler Bridge"
+description: "Bridge Midea CD (boiler pompa caldura) catre MQTT / Home Assistant"
+version: "1.0.0"
+slug: "midea_boiler_bridge"
+init: false
+
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - armhf
+  - i386
+
+options:
+  target_ip: "192.168.88.231"
+  token: ""
+  key: ""
+  mqtt_host: "core-mosquitto"
+  mqtt_port: 1883
+  mqtt_user: ""
+  mqtt_pass: ""
+  poll_interval: 30
+
+schema:
+  target_ip: str
+  token: str
+  key: str
+  mqtt_host: str
+  mqtt_port: int
+  mqtt_user: str
+  mqtt_pass: str
+  poll_interval: int
